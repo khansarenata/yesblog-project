@@ -1,0 +1,138 @@
+/* SETUP */
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 1000;
+    top: 0;
+    left:0;
+}
+
+.link-white {
+    color: white;
+    text-decoration: none;
+    margin: auto 0;
+    padding: 0 1rem;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* APPLY TRANSITION */
+.transition {
+    transition: all ease .3s;
+}
+
+/* MENU */
+#menu {
+    transition: all ease .3s;
+}
+
+#menu.show{
+    transform: translateX(0%);
+}
+
+#menu.hide{
+    transform: translateX(-100%);
+}
+
+/* SOME CONTENT */
+.app-section-hero {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.app-hero-first-content {
+    position: relative;
+    color: white;
+}
+
+.app-hero-first-content::after {
+    content: '';
+    position: absolute;
+    width: 150vw;
+    height: 300vh;
+    background: url('https://cdn.pixabay.com/photo/2018/12/18/22/29/background-3883181_640.jpg');
+    background-size: cover;
+    bottom: 0;
+    left: -50vw;
+    margin-bottom: -16px;
+    z-index: -10;
+}
+
+.app-hero-img {
+    width: 20vw;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* FORM */
+.app-input {
+    padding: 0 8px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
