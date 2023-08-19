@@ -125,7 +125,7 @@
         </div>
         <hr />
         <div class="text-center">
-            Copyright by Peduli Digital x Yes Tech : by Rico Arisandy
+            Copyright © 2023 Khansa
         </div>
     </footer>
 
